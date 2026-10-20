@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-teal: #176f78;
+    --brand-teal-dark: #12555c;
+    --brand-teal-light: #dceceb;
+    --brand-bg: #f1eee6;
+    --brand-surface: #fbfaf6;
+    --brand-border: #d9d2c2;
+    --brand-text: #17343a;
+    --brand-muted: #527078;
+    --brand-accent-orange: #e6813e;
+    --brand-accent-gold: #c9982f;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--brand-bg);
+    color: var(--brand-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Themes */
+  body[data-theme="dark"] {
+    --brand-teal: #1db1be;
+    --brand-teal-dark: #147c85;
+    --brand-teal-light: #16363a;
+    --brand-bg: #0f172a;
+    --brand-surface: #1e293b;
+    --brand-border: #334155;
+    --brand-text: #f8fafc;
+    --brand-muted: #94a3b8;
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+
+  body[data-theme="forest"] {
+    --brand-teal: #237b60;
+    --brand-teal-dark: #185a46;
+    --brand-teal-light: #d9efe7;
+    --brand-bg: #edf5f1;
+    --brand-surface: #f7faf8;
+    --brand-border: #cadcd3;
+    --brand-text: #14352b;
+    --brand-muted: #4e7164;
+    background-color: #edf5f1;
+    color: #14352b;
+  }
+
+  body[data-theme="sunset"] {
+    --brand-teal: #b85d19;
+    --brand-teal-dark: #8c420e;
+    --brand-teal-light: #fbeee3;
+    --brand-bg: #f7f1ea;
+    --brand-surface: #fdfaf6;
+    --brand-border: #e3d5c6;
+    --brand-text: #392212;
+    --brand-muted: #795e4d;
+    background-color: #f7f1ea;
+    color: #392212;
+  }
+
+  body[data-theme="industrial"] {
+    --brand-teal: #3b6280;
+    --brand-teal-dark: #27455d;
+    --brand-teal-light: #e4edf3;
+    --brand-bg: #eceff2;
+    --brand-surface: #f7f9fa;
+    --brand-border: #cbd4dc;
+    --brand-text: #192733;
+    --brand-muted: #576b7b;
+    background-color: #eceff2;
+    color: #192733;
+  }
+}
+
+.font-display {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.font-mono-numbers {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.surface-grid {
+  background-image: radial-gradient(rgba(23, 111, 120, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+body[data-theme="dark"] .surface-grid {
+  background-image: radial-gradient(rgba(29, 177, 190, 0.12) 1px, transparent 1px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+body[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}

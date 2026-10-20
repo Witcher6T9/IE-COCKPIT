@@ -1,0 +1,8 @@
+{
+  "name": "IE Daily Control | Garment Line Efficiency Tracker",
+  "description": "Track daily line efficiency, manpower, bottlenecks, checklists and factory KPIs for garment industrial engineering teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
