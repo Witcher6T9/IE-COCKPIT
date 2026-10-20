@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/api/health",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "GEMINI_API_KEY",
+      "description": "Google Gemini API key for AI audit features (optional — app falls back to heuristic responses without it). Obtain from https://aistudio.google.com/apikey",
+      "requiredAtBoot": false
+    }
+  ]
+}
